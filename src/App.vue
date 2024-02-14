@@ -1,17 +1,20 @@
 <script setup>
 import NavBar from './views/layouts/NavBar.vue';
 import { RouterView } from 'vue-router';
+import FooterView from './views/layouts/FooterView.vue';
 </script>
 
 <template>
   <nav-bar />
   <router-view />
+  <footer-view />
 </template>
 
 <style scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
 .navbar{
-  font-family: 'Sarabun' ,sans-serif;
+  font-family: 'Sarabun', sans-serif;
 }
 
 </style>

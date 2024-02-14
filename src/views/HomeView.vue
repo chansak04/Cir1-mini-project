@@ -2,33 +2,41 @@
 import { toast } from 'vue3-toastify';
 import 'vue3-toastify/dist/index.css';
 
-toast.info("ยินดีต้อนรับ สาขาเทคโนโลยีสารสนเทศ" , {
+toast.info("ยินดีต้อนรับ สาขาเทคโนโลยีสารสนเทศ", {
     autoClose: 2000,
     position:toast.POSITION.TOP_CENTER
 });
+
 const notify = () => {
-      toast.success("Wow so easy !", {
-        autoClose: 1000,
-      }); // ToastOptions
+    toast.success("Wow so easy !", {
+        autoClose: 2000,
+        position: toast.POSITION.TOP_RIGHT
+    }); // ToastOptions
     return { notify };
 }
+
 </script>
+
 <template>
     <div class="container my-5">
         <div class="row">
             <div class="col-md-4">
-                <div class="card shadow p-0" >
-            <img src="https://miro.medium.com/v2/resize:fit:1400/1*EkXLPE4U3YDByeQmL7uy7g.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">สาขาวิชาเทคโนโลยีสารสนเทศ</h5>
-                <p class="card-text">เพื่อให้สามารถปฏิบัติงานในอาชีพนักพัฒนาซอฟต์แวร์คอมพิวเตอร์หรือนักพัฒนาระบบเครือข่าย
-                     คอมพิวเตอร์และความปลอดภัย หรือ นักพัฒนาระบบสมองกลฝังตัวและไอโอที
-                     หรือ นักพัฒนา คอมพิวเตอร์กราฟิก เกมส์ และแอนิเมชัน ในสถานประกอบการและประกอบอาชีพอิสระ
-                     รวมทั้งการ ใช้ความรู ้และทักษะเป็นพื้นฐานในการศึกษาต่อในระดับสูงขึ้นได้</p>
-                <a href="http://www.trattc.ac.th:4001/" class="btn btn-primary" @click="notify">อ่านต่อ...</a>
+                <div class="card shadow p-0">
+                    <img src="https://positioningmag.com/wp-content/uploads/2018/01/4_esport.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">สาขาเทคโนโลยีสารสนเทศ</h5>
+                        <p class="card-text">
+                            เพื่อให้สามารถปฏิบัติงานในอาชีพนักพัฒนาซอฟต์แวร์คอมพิวเตอร์หรือ นักพัฒนาระบบเครือข่าย
+                            คอมพิวเตอร์และความปลอดภัย หรือ นักพัฒนาระบบสมองกลฝังตัวและไอโอที หรือ นักพัฒนา
+                            คอมพิวเตอร์กราฟิกเกมส์และแอนิเมชั่น ในสถานประกอบการและประกอบอาชีพอิสระ รวมทั้งการ
+                            ใช้ความรู้และทักษะเป็นพื้นฐานในการศึกษาต่อในระดับสูงขึ้นได้
+                        </p>
+                        <a href="http://www.trattc.ac.th:4001/" target="_blank" class="btn btn-primary" @click="notify">อ่านต่อ...</a>
+                    </div>
+                </div>
             </div>
-        </div>
-            </div>
+
             <div class="col-md-8">
                 <div class="card shadow">
                     <div class="card-header">
@@ -36,7 +44,7 @@ const notify = () => {
                     </div>
                     <div class="card-body">
                         <div class="card-title">
-                            title
+                            Title
                         </div>
                         <div class="card-text">
                             Sub Title
@@ -45,11 +53,8 @@ const notify = () => {
                 </div>
             </div>
         </div>
-        
     </div>
 </template>
-    
-
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
@@ -57,9 +62,10 @@ const notify = () => {
 h5 {
     font-family: 'Sarabun', sans-serif;
 }
+
 p,
-a{
-  font-family: 'Sarabun', sans-serif;
-  font-size: 15px; 
+a {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 15px;
 }
 </style>
